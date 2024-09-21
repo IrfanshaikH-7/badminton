@@ -3,6 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import grassland from '../assets/bg.jpg';
 import badminton_ground from '../assets/badminton_ground.jpg';
+import badminton_ground_open from '../assets/badminton_ground_open.jpg';
 
 
 const Navigation = () => {
@@ -18,6 +19,7 @@ const Navigation = () => {
       <button onClick={() => handleNavigation('')} className="p-2 m-2 bg-blue-500 text-white rounded">default</button>
       <button onClick={() => handleNavigation(grassland)} className="p-2 m-2 bg-green-500 text-white rounded">Grassland</button>
       <button onClick={() => handleNavigation(badminton_ground)} className="p-2 m-2 bg-red-500 text-white rounded">badminton ground</button>
+      <button onClick={() => handleNavigation(badminton_ground_open)} className="p-2 m-2 bg-cyan-500 text-white rounded">badminton ground open</button>
     </div>
   );
 };
