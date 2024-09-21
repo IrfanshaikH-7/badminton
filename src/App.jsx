@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import RootComponent from './components/Root'
-import BadmintonShuttlecock from './components/Shuttle'
+// src/App.js
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BadmintonShuttlecock from './components/Shuttle';
+import Navigation from './components/Navigation';
 
 function App() {
-
   return (
-    <>
-      {/* <main className='h-full w-full bg-black'> */}
-        {/* <RootComponent /> */}
-        <BadmintonShuttlecock />
-
-      {/* </main> */}
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigation />} />
+        <Route path="/play" element={<BadmintonShuttlecock />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
