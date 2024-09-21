@@ -19,7 +19,7 @@ const BadmintonShuttlecock = () => {
       setTimeout(() => setIsAnimating(false), 1700);
     };
 
-    const intervalId = setInterval(randomizePosition, Math.random() * (5000 - 2000) + 2000);
+    const intervalId = setInterval(randomizePosition, Math.random() * (2000 - 1500) + 1500);
     return () => clearInterval(intervalId);
   }, []);
 
